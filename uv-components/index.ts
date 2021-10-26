@@ -1,1 +1,1 @@
-export * from "./components";
+export {Channels, ReactChannels} from './components/channels'
