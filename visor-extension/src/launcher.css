@@ -8,11 +8,11 @@
 }
 
 .command-launcher-menu {
-  width: 160px;
+  width: 184px;
 }
 
 .command-launcher-display {
-  width: -webkit-fill-available;
+  width: calc(100% - 184px);
   height: 100%;
   background: lightgray;
   overflow-y: scroll;
@@ -25,10 +25,11 @@
 }
 
 .modal-input-box {
+  display: flex;
   padding: 2px;
-  padding-left: 16px;
-  height: 72px;
+  height: 64px;
   outline: none;
+  border-bottom: 1px solid #353a38;
   background-color: #1b231f;
   font-size: 18px;
 }
@@ -40,9 +41,9 @@
 }
 
 .cl-base-input {
-  width: -webkit-fill-available;
-  height: 72px;
+  height: 64px;
   padding: 0;
+  padding-left: 16px;
   outline: none;
   border: none;
   background-color: #1b231f;
@@ -130,7 +131,8 @@
 .inputs-wrapper {
   display: flex;
   align-items: center;
-  height: 72px;
+  height: 64px;
+  padding-left: 8px;
 }
 
 .modal-input-box input {
@@ -139,4 +141,14 @@
 
 .modal-input-box input::placeholder {
   color: #a5b0ab;
+}
+
+.logo-container {
+  width: 184px;
+  background-color: #252d29;
+}
+
+.logo {
+  padding-top: 20px;
+  padding-left: 24px;
 }
