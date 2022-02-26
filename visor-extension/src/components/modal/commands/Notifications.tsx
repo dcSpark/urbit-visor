@@ -1,6 +1,6 @@
 import { Command } from '../types';
 
 export const Notifications: Command = {
-  title: 'notifications',
+  title: 'Notifications',
   description: 'open notifications',
 };

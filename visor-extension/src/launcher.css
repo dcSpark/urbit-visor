@@ -3,12 +3,13 @@
 .command-launcher-body {
   display: flex;
   justify-content: flex-start;
-  padding: 2px;
-  height: 370px;
+  height: 576px;
 }
 
 .command-launcher-menu {
   width: 184px;
+  background-color: #252d29;
+  color: #a5b0ab;
 }
 
 .command-launcher-display {
@@ -26,12 +27,12 @@
 
 .modal-input-box {
   display: flex;
-  padding: 2px;
   height: 64px;
   outline: none;
   border-bottom: 1px solid #353a38;
+  box-sizing: border-box;
   background-color: #1b231f;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .modal-container {
@@ -41,13 +42,13 @@
 }
 
 .cl-base-input {
-  height: 64px;
+  /* height: 64px; */
   padding: 0;
   padding-left: 16px;
   outline: none;
   border: none;
   background-color: #1b231f;
-  font-size: 18px;
+  font-size: 16px;
   color: #fff;
 }
 
@@ -151,4 +152,24 @@
 .logo {
   padding-top: 20px;
   padding-left: 24px;
+}
+
+.menu-option {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  margin: 4px 8px;
+  padding-left: 14px;
+  border-radius: 12px;
+  font-size: 16px;
+}
+
+.menu-option.selected {
+  background-color: #019d64;
+  color: white;
+}
+
+.command-launcher-menu-option:focus-visible {
+  background-color: aquamarine;
+  font-family: 'Inter', sans-serif;
 }

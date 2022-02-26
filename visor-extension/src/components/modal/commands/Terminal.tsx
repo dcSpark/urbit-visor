@@ -9,7 +9,7 @@ const Icon = () => (
 
 export const Terminal: Command = {
   command: 'poke',
-  title: 'terminal',
+  title: 'Terminal',
   icon: Icon,
   description: 'connect to dojo terminal',
   arguments: ['command'],
