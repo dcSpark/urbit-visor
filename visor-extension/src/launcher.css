@@ -173,3 +173,7 @@
   background-color: aquamarine;
   font-family: 'Inter', sans-serif;
 }
+
+.command-icon {
+  padding-right: 14px;
+}

@@ -11,6 +11,7 @@ interface MenuOptionProps {
 }
 
 const MenuOptions = (props: MenuOptionProps) => {
+  console.log('poops:', props);
   const [clickedIndex, setClickedIndex] = useState(-1);
 
   useEffect(() => {
@@ -34,6 +35,8 @@ const MenuOptions = (props: MenuOptionProps) => {
     }
   }, [props.keyDown]);
 
+  const Icon = props.selected?.icon;
+
   return (
     <div className="command-launcher-menu-list">
       {props.commands.map((option, index) => (
@@ -47,9 +50,7 @@ const MenuOptions = (props: MenuOptionProps) => {
           }
           key={index}
         >
-          {/* <Icon name={option.title.toLowerCase()} /> */}
-          {/* <img src={`../../icons/${option.title.toLowerCase()}.svg`} /> */}
-          {option.icon}
+          <div className="command-icon">{option.icon}</div>
           {option.title}
         </div>
       ))}

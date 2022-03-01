@@ -16,7 +16,7 @@ import { DM } from './commands/DM';
 import { Notifications } from './commands/Notifications';
 import { Command } from './types';
 
-const commands: Command[] = [Poke, Scry, Subscribe, Spider, Terminal, DM, Notifications];
+const commands: Command[] = [DM, Terminal, Poke, Scry, Spider, Subscribe, Notifications];
 
 const Modal = () => {
   const rootRef = useRef(null);

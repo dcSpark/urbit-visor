@@ -2,7 +2,7 @@ import React from 'react';
 
 export interface Command {
   command?: String;
-  icon?: React.FunctionComponent;
+  icon?: React.ReactNode;
   title: String;
   description: String;
   arguments?: string[];

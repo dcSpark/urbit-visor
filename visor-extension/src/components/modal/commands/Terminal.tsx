@@ -1,16 +1,13 @@
 import { Command } from '../types';
 import React from 'react';
+import terminalIcon from '../../../icons/terminal.svg';
 
-const Icon = () => (
-  <svg className="icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-    <rect width="100" height="100" />
-  </svg>
-);
+const Icon = () => <img src={terminalIcon} />;
 
 export const Terminal: Command = {
   command: 'poke',
   title: 'Terminal',
-  icon: Icon,
+  icon: <Icon />,
   description: 'connect to dojo terminal',
   arguments: ['command'],
   schema: [
