@@ -27,7 +27,7 @@ function appendLauncher() {
   modal.id = 'command-launcher-container';
   modal.style.padding = '0';
   modal.style.borderWidth = '0px';
-  modal.style.backgroundColor = 'white';
+  modal.style.backgroundColor = 'transparent';
   modal.style.borderRadius = '24px';
   modal.style.borderColor = 'transparent';
   const frame = document.createElement('iframe');
