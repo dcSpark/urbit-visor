@@ -11,7 +11,6 @@ interface MenuOptionProps {
 }
 
 const MenuOptions = (props: MenuOptionProps) => {
-  console.log('poops:', props);
   const [clickedIndex, setClickedIndex] = useState(-1);
 
   useEffect(() => {

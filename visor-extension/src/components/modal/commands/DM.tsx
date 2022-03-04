@@ -2,9 +2,9 @@ import { Command } from '../types';
 import React from 'react';
 import UrbitInterface from '@urbit/http-api';
 import { addDmMessage } from '@urbit/api';
-import groupsIcon from '../../../icons/groups.svg';
+import dmIcon from '../../../icons/dm.svg';
 
-const Icon = () => <img src={groupsIcon} />;
+const Icon = () => <img src={dmIcon} />;
 
 export const DM: Command = {
   command: 'poke',

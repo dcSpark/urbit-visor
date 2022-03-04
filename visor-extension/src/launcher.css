@@ -177,3 +177,7 @@
 .command-icon {
   padding-right: 14px;
 }
+
+.menu-option.selected .command-icon img {
+  filter: brightness(0) invert(1);
+}
